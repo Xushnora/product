@@ -4,17 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product</title>
+    <title>MyProduct</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/col.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="imgs/logotip.svg">
 </head>
 <body>
     <section id="hero">
-        <div class="container">
-            <div class="logo-box">
-                <a href="#">
-                    <img src="./imgs/logo-white (2).svg" alt="Logo">
-                </a>
+       <header class="header__content">
+            <div class="container">
+                <div class="header__site">
+                    <div class="header__logo-box grow" id="logo"></div>
+                    <nav class="header__nav nav" id="headerNav">
+                            <button class="nav__close" id="closeBtn">
+                                <i class='bx bx-x'></i>
+                            </button>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link active" href="#">Product </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> Customers</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> Pricing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Resources</a>
+                            </li>
+                        </ul>
+                        <div class="nav__btns">
+                            <a class="header__btn sign-in" href="#">Sign In</a>
+                            <a class="header__btn sign-up " href="#">Sign Up</a>
+                        </div>
+                    </nav>
+                    <button class="header__dark darkBtn" id="darkSite">
+                        <img class="darkBtn__img" class="" src="./imgs/sun-moon.svg" alt="dark-light">
+                    </button>
+                    <button id="menuBtn" class="header__menu">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </div>
             </div>
-        </div>
+       </header>
+       <div class="hero__content hero">
+            <div class="container">
+                <div class="hero__row">
+                    <div class="hero__desc">
+                        <h1 class="hero__title" >Work at the speed
+                          <br>  of thought</h1>
+                        <p class="hero__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+                        <div class="hero__btns">
+                            <a class="hero__btn-link" href="#">Get started</a>
+                            <a class="hero__btn-play" href="#"><i class='bx bx-play'></i>Watch the Video</a>
+                        </div>
+                    </div>
+                    <div class="hero__imgbox">
+                        <img class="hero__img" src="./imgs/amico.png" alt="Amico">
+                    </div>
+                </div>
+            </div>
+       </div>
     </section>
+
+    <script src="Js/main.js"></script>
 </body>
 </html>
