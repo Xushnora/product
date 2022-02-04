@@ -215,8 +215,17 @@ a {
     margin: 0 auto;
     margin-left: 30px;
     text-decoration-line: underline;
-
 }
+
+
+.hero__btn-link:hover {
+    box-shadow: inset 0px 7px 40px 7px #03d6bf;
+}
+.sign-up:hover {
+    box-shadow: inset 0px 7px 40px 7px #03d6bf;
+}
+
+
 
 .bx-play {
     color: var(--primary-color);
@@ -294,6 +303,11 @@ a {
         flex-direction: column-reverse;
     }
 
+    .hero__img {
+        width: 100%;
+        height: 90%;
+    }
+
     .hero__btns {
         display: flex;
         flex-direction: row;
@@ -317,17 +331,9 @@ a {
 
      /* HERO PART */
 
-     .hero__row {
-        flex-direction: column-reverse;
-    }
 
     .hero__desc {
         align-items: center;
-    }
-
-    .hero__img {
-        width: 100%;
-        height: 90%;
     }
 
     .hero__title {
