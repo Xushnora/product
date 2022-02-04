@@ -159,7 +159,7 @@ a {
 
 .bx-x {
     font-size: 35px;
-    color: var(--text-color);
+    color: #fff;
 }
 
 
@@ -193,8 +193,11 @@ a {
     margin-bottom: 45px;
 }
 .hero__btns {
-    /* width: 366px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 .hero__btn-link {
     padding: 15px 41px;
     background-color: var(--primary-color);
@@ -221,8 +224,7 @@ a {
     position: relative;
     top: 5px;
 }
-.hero__imgbox {
-}
+
 .hero__img {
     width: 600px;
     height: 555px;
@@ -241,34 +243,28 @@ a {
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        display: none;
         position: fixed;
-        top: 20px;
-        left: 0;
-        /* opacity: 0;
-        position: static;
         top: 0;
-        transition: all 0.4s ease; */
+        right: -100%;
+        padding-top: 90px;
+        opacity: 0;
+        transition: all 0.5s ease;
         background-color: rgba(0, 0, 0, 0.795);
+        text-align: center;
     }
 
-    .nav__list {
-        flex-direction: column;
-    }
-    
-    
     .nav__item {
         margin-right: 0;
         padding-top: 0;
         margin-bottom: 24px;
+        border-bottom: 2px solid var(--primary-color)
     }
 
-    .nav__link {
-       
-    }
-
+    
     .sign-in {
         margin-bottom: 24px;
+        border-color: #fff;
+        color: #fff;
         
     }
 
@@ -288,12 +284,40 @@ a {
 
     .nav__btns {
         flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -70px;
+        left: 4%;
+    }
+
+    .hero__row {
+        flex-direction: column-reverse;
+    }
+
+    .hero__btns {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    
+    .nav__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__link {
+        color: #fff;
+        font-size: 20px;
     }
 
 
-    /* HERO PART */
+     /* HERO PART */
 
-    .hero__row {
+     .hero__row {
         flex-direction: column-reverse;
     }
 
@@ -318,12 +342,21 @@ a {
         text-align: center;
     }
 
+    .hero__btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__btn-play {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
 }
 
 .show {
-    display: block;
-    /* opacity: 1;
-    right: 0; */
+    opacity: 1;
+    right: 0;
 }
 
 .test {
