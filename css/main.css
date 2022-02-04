@@ -265,8 +265,11 @@ a {
     .nav__item {
         margin-right: 0;
         padding-top: 0;
-        margin-bottom: 24px;
         border-bottom: 2px solid var(--primary-color)
+    }
+
+    .nav__item:not(:last-child) {
+        margin-bottom: 24px;
     }
 
     
@@ -337,14 +340,14 @@ a {
     }
 
     .hero__title {
-        width: 90%;
+        width: 95%;
         margin-bottom: 18px;
         font-size: 36px;
         text-align: center;
     }
 
     .hero__text {
-        width: 80%;
+        width: 95%;
         text-align: center;
     }
 
