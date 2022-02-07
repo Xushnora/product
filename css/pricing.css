@@ -460,7 +460,6 @@ a {
    
 }
 
-}
 .question__item {
     padding-bottom: 22px;
     border-bottom: 1px solid #e7e7e7;
@@ -493,11 +492,16 @@ a {
     color: var(--text-color);
 }
 .question__text-down {
-    width: 920px;
+    width: 90%;
     font-size: 16px;
     line-height: 24px;
     color: var(--text-color);
     display: none;
+}
+
+.question__desc-box {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -781,50 +785,65 @@ a {
 
     /* EFFECTS */
 
+    .effects {
+        padding: 50px 0;
+    
+    }
+    .effects__title-box {
+        width: 100%;
+    
+    }
+    .effects__title {
+        width: 100%;
+    }
+
     .effects__page {
         flex-direction: column;
     }
-
+    
     .effects__bigimg {
         width: 100%;
         height: 100%;
+        
     }
-
+    
+    .effects__desc {
+        width: 100%;
+    }
+    
     .effects__item {
         width: 100%;
+        
     }
-
-    .effects__name {
-        width: 100%;
-        display: flex;
-    }
-
-    .effects__img {
-        margin-right: 0;
-    }
-
-    .effects__text {
-        width: 90%;
-    }
-
+    
     .effects__title-job {
+        text-align: left;
+    }
+    
+    .effects__text {
         width: 100%;
     }
+    
+    
+    
+
+
+
+
 
     /*    QUESTION    */
 
     .question__desc-box {
         width: 100%;
-        /* display: flex; */
     }
 
     .border {
         width: 100%;
     }
 
-    /* .question__title-down {
+    .question__title-down {
         width: 100%;
-    } */
+    }
 
     /*  ACIDE  */
 
