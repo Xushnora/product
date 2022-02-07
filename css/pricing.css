@@ -69,8 +69,8 @@ a {
 
 .text {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 27px;
     color: var(--text-color);
 }
 
@@ -441,7 +441,64 @@ a {
 }
 
 
-/* background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%); */
+/* QUESTIONS */
+
+.question {
+    padding: 75px 0;
+}
+.question__page {
+    text-align: center;
+}
+.question__title {
+    margin-bottom: 8px;
+}
+
+.question__text {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 27px;
+   
+}
+
+}
+.question__item {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 16px;
+
+}
+.question__btn {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+    cursor: pointer;
+}
+.bx-plus {
+    color: #fff;
+    font-size: 23px;
+}
+
+.question__desc-box {
+    margin-bottom: 14px;
+}
+.question__title-down {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text-color);
+}
+.question__text-down {
+    width: 920px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    display: none;
+}
 
 
 /* ACIDE */
@@ -687,166 +744,20 @@ a {
         left: 4%;
     }
 
-    .hero__row {
-        flex-direction: column-reverse;
-    }
-
-    .hero__img {
+    .title {
         width: 100%;
-        height: 90%;
-    }
-
-    .hero__desc {
-        padding-top: 20px;
-        width: 100%;
-    }
-
-    .hero__btns {
-        display: flex;
-        flex-direction: row;
-    }
-
-    /* BUILD */
-
-    .build {
-        padding-top: 100px;
-    }
-
-
-    .build__list {
-        flex-flow: wrap;
-        justify-content: center;
-    }
-
-
-    /* MANAGMENT */
-
-    .managment__content {
-        flex-direction: column-reverse;
-    }
-
-    .managment__imgbox {
-        margin-bottom: 50px;
-    }
-
-    .managment__img {
-        width: 100%;
-        height: 90%;
-    }
-
-    .managment__info {
-        width: 100%;
-    }
-
-    .managment__title {
-        margin-bottom: 16px;
-    }
-
-    /* SUPPORT */
-
-    .support__content {
-        flex-direction: column;
-        padding-top: 20px;
-    }
-
-    .support__info {
-        margin-left: 0;
-    }
-
-    .support__imgbox {
-        margin-bottom: 50px;
-    }
-
-    .support__img {
-        width: 100%;
-        height: 90%;
-    }
-
-    .support__info {
-        width: 100%;
-    }
-
-    /* EASY */
-
-    .easy {
-        width: 100%;
-        padding: 73px 0; 
-    }
-
-    .easy__title {
-        width: 100%;
-        font-weight: bold;
-        font-size: 32px;
-    }
-
-    .easy__text {
-        width: 100%;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .easy__lists {
-        flex-direction: column;
-    }
-
-    .process__item {
-        width: 100%;
-        margin: 0 5px;
-    }
-
-    .process__text {
         text-align: center;
-        padding: 10px 25px;
+    }
+
+    .text {
         width: 100%;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #2F281E;
-    }
-
-    .process__img {
-        width: 90px;
-        height: 90px;
-    }
-
-    /* strategies */
-
-    .strategies__title {
-        width: 100%;
-    }
-
-    .strategies__text {
-        width: 100%;
-    }
-
-    .strategies__list {
-        flex-direction: column;
-        justify-content: stretch;
-    }
-
-    .strategies__item {
-        width: 100%;
-        border: none;
-    }
-
-    .strs__img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .strategies__list {
-        margin-bottom: 0;
-    }
-
-    .strategies__round {
-        display: none;
+        text-align: center;
     }
 
     /* PRICE */
 
     .price {
-        padding: 0;
+        padding: 50px 0 0 0;
     }
 
     .price__desc {
@@ -864,28 +775,56 @@ a {
         margin-bottom: 32px;
     }
 
-
-    /* CLIENTS */
-
-    .clients__text {
-        width: 100%;
-    }
-
-    .clients__title {
+    .price__text {
         text-align: center;
-        width: 100%;
     }
 
-    .clients__list {
+    /* EFFECTS */
+
+    .effects__page {
         flex-direction: column;
-
     }
 
-    .clients__item {
+    .effects__bigimg {
         width: 100%;
         height: 100%;
-        margin-bottom: 32px;
     }
+
+    .effects__item {
+        width: 100%;
+    }
+
+    .effects__name {
+        width: 100%;
+        display: flex;
+    }
+
+    .effects__img {
+        margin-right: 0;
+    }
+
+    .effects__text {
+        width: 90%;
+    }
+
+    .effects__title-job {
+        width: 100%;
+    }
+
+    /*    QUESTION    */
+
+    .question__desc-box {
+        width: 100%;
+        /* display: flex; */
+    }
+
+    .border {
+        width: 100%;
+    }
+
+    /* .question__title-down {
+        width: 100%;
+    } */
 
     /*  ACIDE  */
 
@@ -1007,4 +946,13 @@ a {
 
 .none{
     display: none;
+}
+
+.mode {
+    display: block;
+}
+
+.bx-minus {
+    font-size: 23px;
+    color: #fff;
 }
