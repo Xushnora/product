@@ -145,7 +145,7 @@ a {
     border-radius: 6px;
 }
 .sign-in {
-    color: #173A56;
+    color: var(--text-color);
 }
 
 .sign-in:hover {
