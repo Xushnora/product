@@ -126,6 +126,11 @@ a {
     color: var(--text-color);
 }
 
+.nav__link:hover {
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
 .nav__btns {
     display: flex;
     flex-direction: row;
@@ -140,7 +145,14 @@ a {
     border-radius: 6px;
 }
 .sign-in {
-    color: var(--btn-color);
+    color: #173A56;
+}
+
+.sign-in:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+    box-shadow: inset 0px 7px 40px 7px #03d6bf;
+    border-color: transparent;
 }
 
 .sign-up {
@@ -187,6 +199,10 @@ a {
 .bx-x {
     font-size: 35px;
     color: #fff;
+}
+
+.sign-up:hover {
+    box-shadow: inset 0px 7px 40px 7px #03d6bf;
 }
 
 
