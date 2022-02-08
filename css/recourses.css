@@ -764,7 +764,7 @@ a {
 
     /* form */
 
-    
+
 
 
      /* footer */
@@ -819,10 +819,24 @@ a {
     .form__text {
         width: 100%;
     }
-
-
     
  }
+
+ @media screen and (max-width: 768px){
+
+    
+    .nav__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav__link {
+        color: #fff;
+        font-size: 20px;
+    }
+
+}
+
 
  
 .show {
