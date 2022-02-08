@@ -215,6 +215,7 @@ a {
 .hero__form {
     position: relative;
     margin-bottom: 24px;
+    z-index: -1;
 }
 .hero__input {
     width: 470px;
@@ -433,51 +434,52 @@ a {
 
 /* form */
 
-.form {
-    background-color: #22343D;
+.forms {
+    background-color: var(--bg-color);
     padding: 52px 50px;
-    border: 1px solid #464646;
+    border: 1px solid #ddd;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
 }
-.form__title {
+
+.forms__title {
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
     letter-spacing: 0.1px;
-    color: #fff;
+    color: var(--text-color);
     margin: 0 auto;
     margin-bottom: 45px;
 }
-.form__name {
-    width: 768px;
-    padding: 19px 600px 19px 20px;
+.forms__name {
+    width: 90%;
+    padding: 19px 20px;
     margin-bottom: 45px;
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
     border-radius: 39px;
     background-color: #F5F5F5;
 }
-.form__email {
-    width: 768px;
-    padding: 19px 600px 19px 20px;
+.forms__email {
+    width: 90%;
+    padding: 19px 20px;
     margin-bottom: 45px;
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
     border-radius: 39px;
     background-color: #F5F5F5;
 }
-.form__text {
-    padding:23px 600px 23px 20px;
-    width: 768px;
+.forms__text {
+    padding:23px 20px;
+    width: 90%;
     height: 193px;
     margin-bottom: 45px;
     background-color: #F5F5F5;
+    display: block;
 }
-.form__btn {
+.forms__btn {
+    width: 145px;
     background: var(--primary-color);
-    border-radius: 35px;
     border: none;
     padding: 18px 54px;
     font-weight: 500;
@@ -486,10 +488,11 @@ a {
     letter-spacing: 0.2px;
     color: #fff;
     margin: 0 auto;
+    border-radius: 34px;
 
 }
 
-.form__text:focus {
+.forms__text:focus {
     outline: none;
 }
 
@@ -764,12 +767,38 @@ a {
 
     /* form */
 
+    .forms {
+        width: 100%;
+        padding: 50px 20px;
+        border: none;
+    }
+    .forms__title {
+        width: 100%;
+        align-items: center;
+    }
+    .forms__name {
+        width: 100%;
+    }
+    .forms__email {
+        width: 100%;
+    }
+    .forms__text {
+        width: 100%;
+    }
+    .forms__btn {
+       display: flex;
+       justify-content: center;
+    }
+    
+    .forms__text:focus {
+        outline: none;
+    }
 
 
+    
+    /* footer */
 
-     /* footer */
-
-     .footer__content {
+    .footer__content {
         flex-direction: column;
         width: 100%;
         align-items: center;
